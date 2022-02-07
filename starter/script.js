@@ -36,6 +36,7 @@ btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
 // HANDLING KEYPRESS EVENTS
+// keypress events  are GLOBAL events,that means they happen on the WHOLE document object,so we have to listen for such events on the whole document
 // javascript creates an object that stores all the information concerning a particular keypress event
 // we use the .key property to check for the type of key pressed
 document.addEventListener("keydown", function (event) {

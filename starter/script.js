@@ -5,6 +5,8 @@ const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 
+// ---MAJOR--- adding or removing classes allows us to activate and deactivate css style properties,hence allowing us to change the appearance of a web page
+
 // function that opens the modal window and displays the overlay
 const openModal = function () {
   // the classList property returns a collection of the class attributes of the element.It is a read-only property

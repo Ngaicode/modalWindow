@@ -34,3 +34,17 @@ for (let i = 0; i < btnsOpenMOdal.length; i++) {
 btnCloseModal.addEventListener("click", closeModal);
 
 overlay.addEventListener("click", closeModal);
+
+// HANDLING KEYPRESS EVENTS
+// javascript creates an object that stores all the information concerning a particular keypress event
+// we use the .key property to check for the type of key pressed
+document.addEventListener("keydown", function (event) {
+  // logging to the console to check for the key that was pressed
+  console.log(event.key);
+  // closes the modal window if the Escape key is pressed
+  if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+    // we only want to close the modal window if it is open,ie when it doesn't contain the hidden class
+    // the contains() method returns a boolean
+    closeModal();
+  }
+});
